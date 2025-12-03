@@ -111,6 +111,15 @@ nav {
   color: var(--text-dark);
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
 .hero {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   padding: 120px 0 80px;
