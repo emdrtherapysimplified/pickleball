@@ -115,10 +115,10 @@
         /* Mobile nav toggle visibility */
         .mobile-menu-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--text-dark); }
         @media (max-width: 768px) {
-          nav { position: relative; }
-          nav ul { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background-color: var(--bg-white); border-bottom: 1px solid var(--border-color); padding: 12px 16px; gap: 8px; z-index: 1001; }
-          nav.active ul, #nav-menu.active { display: flex; }
-          .mobile-menu-toggle { display: inline-block; }
+          nav { display: none; }
+          nav ul { display: none; }
+          nav.active ul, #nav-menu.active { display: none; }
+          .mobile-menu-toggle { display: none; }
         }
 @media (max-width: 768px) {
   .hero-inline-video video { max-width: 100%; }
