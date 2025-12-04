@@ -409,11 +409,7 @@ nav {
   margin-left: 20px;
   margin-bottom: 8px;
 }
-/* Hide native media controls on the hero video only */
-.hero-video::-webkit-media-controls-enclosure { display: none !important; }
-.hero-video::-webkit-media-controls { display: none !important; }
-.hero-video::-moz-media-controls { display: none !important; }
-.hero-video::-ms-media-controls { display: none !important; }
+
 
 .bullet-item::before {
   content: '• ';
@@ -808,27 +804,4 @@ footer {
   }
 }
 
-/* Mobile header/menu stacking fix */
-@media (max-width: 768px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: var(--bg-white);
-    border-bottom: 1px solid var(--border-color);
-  }
-  .landing-page { padding-top: 64px; }
-  nav { position: static; }
-  nav ul {
-    position: fixed;
-    top: 64px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1001;
-    box-shadow: var(--shadow);
-  }
-  .mobile-menu-toggle { z-index: 1002; }
-}
+/* Mobile header keeps sticky default; menu hidden already in mobile rules */

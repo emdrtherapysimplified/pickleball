@@ -94,24 +94,7 @@
             z-index: 1000;
             box-shadow: var(--shadow);
         }
-        /* Video di sfondo nell'hero (solo il video è ruotato) */
         .hero { position: relative; overflow: hidden; min-height: 85vh; background-image: linear-gradient(135deg, rgba(248, 249, 250, 0.55) 0%, rgba(255, 255, 255, 0.75) 100%), url('images/hero-mobile.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-        .hero-video-bg { position: absolute; inset: 0; z-index: -1; }
-        .hero-video-bg video {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%) rotate(90deg);
-          transform-origin: center;
-          width: 140%;
-          height: 140%;
-          object-fit: cover;
-        }
-        /* Hide native media controls for background hero video only */
-        .hero-video-bg video::-webkit-media-controls-enclosure { display: none !important; }
-        .hero-video-bg video::-webkit-media-controls { display: none !important; }
-        .hero-video-bg video::-moz-media-controls { display: none !important; }
-        .hero-video-bg video::-ms-media-controls { display: none !important; }
         /* Mobile nav toggle visibility */
         .mobile-menu-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--text-dark); }
         @media (max-width: 768px) {
@@ -121,7 +104,6 @@
           .mobile-menu-toggle { display: none; }
         }
 @media (max-width: 768px) {
-  .hero-inline-video video { max-width: 100%; }
   .hero { padding: 80px 0 60px; }
   .hero { background-image: linear-gradient(135deg, rgba(248, 249, 250, 0.55) 0%, rgba(255, 255, 255, 0.75) 100%), url('images/hero-mobile.jpg'); }
   .hero-content { grid-template-columns: 1fr; gap: 40px; }
@@ -133,10 +115,8 @@
   h2 { font-size: 28px; }
   .toolkit-grid { grid-template-columns: 1fr; }
   .footer-content { grid-template-columns: 1fr; }
-  .hero-video-bg { display: none; }
   .hero-image { display: none; }
 }
-.mobile .hero-video-bg { display: none; }
 .mobile .hero { background-image: linear-gradient(135deg, rgba(248, 249, 250, 0.55) 0%, rgba(255, 255, 255, 0.75) 100%), url('images/hero-mobile.jpg'); }
 
         @media (max-width: 480px) {
@@ -291,7 +271,7 @@
                 <div class="video-grid">
                     <div class="video-card">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Serve & Return Fundamentals" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/Kh0f3HH2yNY" title="Serve & Return Fundamentals" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <h3>Serve & Return Fundamentals</h3>
@@ -301,7 +281,7 @@
 
                     <div class="video-card">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Third-Shot Drop & Drive Patterns" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/xu6pukeV32w" title="Third-Shot Drop & Drive Patterns" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <h3>Third-Shot Drop & Drive Patterns</h3>
@@ -311,7 +291,7 @@
 
                     <div class="video-card">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Reset & Dink Game Under Pressure" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/aLBgoxT5cIY" title="Third-Shot Drop Drills" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <h3>Reset & Dink Game Under Pressure</h3>
@@ -321,7 +301,7 @@
 
                     <div class="video-card">
                         <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Injury-Smart Warm-Up Routine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/P9f1EPrAM2c" title="Injury-Smart Warm-Up Routine" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <h3>Injury-Smart Warm-Up Routine</h3>
